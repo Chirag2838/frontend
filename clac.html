@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Calc</title>
+    </head>
+    <body>
+        Num 1<input type="textbox" id="num1" value="12"> <br><br>Num 2<input type="text" id="num2" value="13"> <br><br><p>result = <span id="result"></span></p>
+        <br>
+        <button id="add">Add</button>
+        <button id="subtract">subtract</button>
+        <button id="multiply">multiply</button>
+        <button id="divide">divide</button>
+    </body>
+    <script>
+        var x= parseInt(document.getElementById("num1").value);
+        var y= parseInt(document.getElementById("num2").value);
+        
+        document.getElementById("add").onclick=function(){
+            
+            var c= x+y;
+            document.getElementById("result").innerHTML=c;
+        }
+        document.getElementById("subtract").onclick=function(){
+            
+            var c= x-y;
+            document.getElementById("result").innerHTML=c;
+        }
+        document.getElementById("multiply").onclick=function(){
+            
+            var c= x*y;
+            document.getElementById("result").innerHTML=c;
+        }
+        document.getElementById("divide").onclick=function(){
+            
+            var c= x/y;
+            document.getElementById("result").innerHTML=c;
+        }
+    </script>
+</html>
