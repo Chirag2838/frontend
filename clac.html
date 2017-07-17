@@ -12,27 +12,26 @@
         <button id="divide">divide</button>
     </body>
     <script>
-        var x= parseInt(document.getElementById("num1").value);
-        var y= parseInt(document.getElementById("num2").value);
         
         document.getElementById("add").onclick=function(){
             
-            var c= x+y;
+            var c= parseInt(document.getElementById("num1").value) + parseInt(document.getElementById("num2").value);
+        
             document.getElementById("result").innerHTML=c;
         }
         document.getElementById("subtract").onclick=function(){
             
-            var c= x-y;
-            document.getElementById("result").innerHTML=c;
+            var c=  parseInt(document.getElementById("num1").value) - parseInt(document.getElementById("num2").value);
+                document.getElementById("result").innerHTML=c;
         }
         document.getElementById("multiply").onclick=function(){
             
-            var c= x*y;
+            var c= parseInt(document.getElementById("num1").value) * parseInt(document.getElementById("num2").value);
             document.getElementById("result").innerHTML=c;
         }
         document.getElementById("divide").onclick=function(){
             
-            var c= x/y;
+            var c= parseInt(document.getElementById("num1").value) / parseInt(document.getElementById("num2").value);
             document.getElementById("result").innerHTML=c;
         }
     </script>
